@@ -1,0 +1,10 @@
+.container {
+    padding: 10px;
+    background: beige;
+}
+img{
+    float: left;
+}
+.photo{
+    float: left;
+}
