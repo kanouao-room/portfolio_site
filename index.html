@@ -16,14 +16,100 @@
 <div id="container">
 
 <div class="recipe">
-  <!-- <header> -->
+  <header>
     <div class="hamburger_haiti">
   <p class="namefont">呉田青</p>
 </div>
+<div class="hamburger-menu">
+  <input type="checkbox" id="menu-btn-check">
+  <label for="menu-btn-check" class="menu-btn"><span></span></label>
+  <!--ここからメニュー-->
+  <div class="menu-content">
+      <ul>
+          <li>
+              <a href="#">メニューリンク1</a>
+          </li>
+          <li>
+              <a href="#">メニューリンク2</a>
+          </li>
+          <li>
+              <a href="#">メニューリンク3</a>
+          </li>
+      </ul>
+  </div>
+  <!--ここまでメニュー-->
+</div>
 
-  <div class="openbtn9"><div class="openbtn-area"><span></span><span></span><span></span></div></div>
-  <!-- </header> -->
-  
+  <!--CSS-->
+  <style type="text/css">
+    body{
+      background-color: white;
+    }
+.menu-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    /* ボタンの全体の色 */
+    background-color:yellow;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    /* ボタンの線の色 */
+    background-color: black;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check {
+    display: none;
+}
+    </style>
+  <!--CSS-->
+
+
+
+   <!-- <div class="openbtn9"><div class="openbtn-area"><span></span><span></span><span></span></div></div> --> 
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="photo">
     <img src="img/5.jpg" alt="">
     <img src="img/3.jpg" alt="">
