@@ -96,4 +96,87 @@ body {
     font-size: 12px;
     line-height: 1.3;
   }
+
+
+/* フッター */
+
+
+  @media (max-width: 639px) {
+    .footer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin: 69px auto 45px;
+    }
+  }
+  
+  .footer__copyright {
+    font-size: 12px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin: 0;
+  }
+  
+  @media (max-width: 639px) {
+    .footer__copyright {
+      margin: 0 0 12px;
+    }
+  }
+  
+  .footer__link {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  @media (max-width: 639px) {
+    .footer__link {
+      font-size: 13px;
+    }
+  }
+  
+  .footer__link li {
+    margin: 0 0 0 12px;
+  }
+  
+  @media (max-width: 639px) {
+    .footer__link li {
+      margin: 0 12px 0 0;
+    }
+  }
+  
+  .footer__link li a {
+    font-weight: bold;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
